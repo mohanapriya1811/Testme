@@ -1,0 +1,26 @@
+{
+"Username": "Demosalesmanager",
+"Password": "crmsfa",
+"createlead": [{
+"CompanyName": "TestLeaf",
+"FirstName": "Hari",
+"LastName": "Radhakrishnan"
+},
+
+{
+
+"CompanyName": "TestLeaf",
+"FirstName": "Aravind",
+"LastName": "R"
+},
+
+{
+
+"CompanyName": "Queagle",
+"FirstName": "Ramya",
+"LastName": "R"
+}
+
+]
+
+}

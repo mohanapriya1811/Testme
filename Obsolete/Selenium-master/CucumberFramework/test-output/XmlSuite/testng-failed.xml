@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [XmlSuite]">
+  <test thread-count="5" name="XmlTest(failed)">
+    <classes>
+      <class name="testcases.Login_TC_01">
+        <methods>
+          <include name="stopReport"/>
+          <include name="setUpClass"/>
+          <include name="preCondition"/>
+          <include name="startReport"/>
+          <include name="tearDownClass"/>
+          <include name="testDetails"/>
+          <include name="runLogin" invocation-numbers="1"/>
+          <include name="setValue"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- testcases.Login_TC_01 -->
+    </classes>
+  </test> <!-- XmlTest(failed) -->
+</suite> <!-- Failed suite [XmlSuite] -->
