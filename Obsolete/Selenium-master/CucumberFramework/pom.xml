@@ -23,11 +23,11 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>3.1.2</version>
 					<configuration>
-						<systempropertyVaribales>
+						<!--<systempropertyVaribales>
 							<propertyName>${browser}</propertyName>
 							<name>${propertyFile}</name>
 							<value>${project.basedir}/src/main/resources/${fileName}</value>
-						</systempropertyVaribales>
+						</systempropertyVaribales>-->
 						<suiteXmlFiles>
 							<suiteXmlFile>testng-actual.xml</suiteXmlFile>
 						</suiteXmlFiles>

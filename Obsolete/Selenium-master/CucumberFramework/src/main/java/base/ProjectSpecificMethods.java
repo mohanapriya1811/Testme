@@ -18,16 +18,16 @@ public class ProjectSpecificMethods extends SeleniumBase{
 	@Parameters({"language"})
 	@BeforeMethod
 	public void preCondition(@Optional ("langName") String lang) throws IOException {
-		String property = System.getProperty("propertyName");
-		if(property.equals("english")) {
+		//String property = System.getProperty("propertyName");
+		if(lang.equals("english")) {
 			setProperty();
-			FileInputStream fis = new FileInputStream(System.getProperty("name"));
+			FileInputStream fis = new FileInputStream("src/main/resources/config_english.properties");
 			getProperty().load(fis);
 			fis.close();
 			}
-			else if(property.equals("french")){
+			else if(lang.equals("french")){
 			setProperty();
-			FileInputStream fis = new FileInputStream(System.getProperty("name"));
+			FileInputStream fis = new FileInputStream("src/main/resources/config_french.properties");
 			getProperty().load(fis);
 			fis.close();
 			}
