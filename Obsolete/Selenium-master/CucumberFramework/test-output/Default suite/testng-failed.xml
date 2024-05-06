@@ -3,19 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.Create_Lead_01">
+      <class name="runner.RunnerClass">
         <methods>
-          <include name="stopReport"/>
           <include name="setUpClass"/>
-          <include name="preCondition"/>
-          <include name="runCreateLead"/>
-          <include name="startReport"/>
-          <include name="tearDownClass"/>
-          <include name="setValue"/>
-          <include name="testDetails"/>
           <include name="postCondition"/>
+          <include name="runScenario"/>
+          <include name="startTestCase"/>
+          <include name="tearDownClass"/>
+          <include name="endResult"/>
+          <include name="preCondition"/>
+          <include name="startReport"/>
         </methods>
-      </class> <!-- testcases.Create_Lead_01 -->
+      </class> <!-- runner.RunnerClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -7,10 +7,17 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import base.BaseClass;
+import base.ProjectSpecificMethods;
+import io.cucumber.testng.CucumberOptions;
 import pages.LoginPage;
 import utils.ReadExcelData;
 
-public class Create_Lead_01 extends BaseClass {
+@CucumberOptions(features = "src/main/java/feature", glue = {"pages"}, 
+monochrome = true,
+tags="@Login"
+
+)
+public class Create_Lead_01 extends ProjectSpecificMethods {
 	
 	@BeforeTest
 	public void setValue() {

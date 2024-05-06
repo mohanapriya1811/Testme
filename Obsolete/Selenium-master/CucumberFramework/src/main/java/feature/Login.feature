@@ -17,18 +17,18 @@ When Click on Login button
 Then Homepage should be displayed
 
 
-@Login
+
 #@LoginNegative
 Scenario: Verify if the user is able to login to the Application with valid username and invalid password
 
 #Given Open the Browser
 #Given Load the Application
 Given Enter the username as 'Demosalesmanager'
-Given Enter the password as 'crmsfa123'
+Given Enter the password as 'crmsfa'
 When Click on Login button
 But User should not be logged in successfully
 
-@Login
+
 #@Datatable
 Scenario: Verify if the user is able to login to the Application with valid username and invalid password
 

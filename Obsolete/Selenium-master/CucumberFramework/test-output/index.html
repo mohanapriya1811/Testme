@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,17 +51,17 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>testng_leaf.xml</span>
+                    <span>testng-actual.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,56 +93,95 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,  8 skipped,  </span>
+                    <span class="method-stats">14 methods, 2 failed,   12 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Login_TC_01" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if the user is able to login to the Application with valid username and invalid password&quot;, &quot;...)">runScenario("Verify if the user is able to login to the Application with valid username and invalid password", "...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Create_Lead_01" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if the user is able to login to the Application with valid username and invalid password&quot;, &quot;...)">runScenario("Verify if the user is able to login to the Application with valid username and invalid password", "...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testcases.Create_Lead_01" class="method navigator-link" hash-for-method="runCreateLead({password=crmsfa, last name=Radhakrishnan, first name=Hari, company name=Testleaf, username=DemoCSR})">runCreateLead({password=crmsfa, last name=Radhakrishnan, first name=Hari, company name=Testleaf, username=DemoCSR})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testcases.Create_Lead_01" class="method navigator-link" hash-for-method="runCreateLead({password=crmsfa, last name=R, first name=Aravind, company name=Queagle, username=DemoCSR})">runCreateLead({password=crmsfa, last name=R, first name=Aravind, company name=Queagle, username=DemoCSR})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.Create_Lead_01" class="method navigator-link" hash-for-method="runCreateLead({password=crmsfa, last name=R, first name=Aravind, company name=Queagle, username=DemoCSR})">runCreateLead({password=crmsfa, last name=R, first name=Aravind, company name=Queagle, username=DemoCSR})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.Create_Lead_01" class="method navigator-link" hash-for-method="runCreateLead({password=crmsfa, last name=Radhakrishnan, first name=Hari, company name=Testleaf, username=DemoCSR})">runCreateLead({password=crmsfa, last name=Radhakrishnan, first name=Hari, company name=Testleaf, username=DemoCSR})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testcases.Login_TC_01" class="method navigator-link" hash-for-method="runLogin({password=crmsfa, username=DemoCSR})">runLogin({password=crmsfa, username=DemoCSR})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testcases.Login_TC_01" class="method navigator-link" hash-for-method="runLogin({password=crmsfa, username=DemoCSR2})">runLogin({password=crmsfa, username=DemoCSR2})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.Login_TC_01" class="method navigator-link" hash-for-method="runLogin({password=crmsfa, username=DemoCSR})">runLogin({password=crmsfa, username=DemoCSR})</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Create_Lead_01" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if the user is able to login to the Application with valid username and password&quot;, &quot;Optional...)">runScenario("Verify if the user is able to login to the Application with valid username and password", "Optional...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.Login_TC_01" class="method navigator-link" hash-for-method="runLogin({password=crmsfa, username=DemoCSR2})">runLogin({password=crmsfa, username=DemoCSR2})</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Create_Lead_01" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if the user is able to create a lead in application&quot;, &quot;Optional[Create Lead functionality of...)">runScenario("Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Login_TC_01" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if the user is able to login to the Application with valid username and invalid password&quot;, &quot;...)">runScenario("Verify if the user is able to login to the Application with valid username and invalid password", "...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Login_TC_01" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if the user is able to create a lead in application&quot;, &quot;Optional[Create Lead functionality of...)">runScenario("Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Create_Lead_01" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if the user is able to create a lead in application&quot;, &quot;Optional[Create Lead functionality of...)">runScenario("Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Login_TC_01" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if the user is able to create a lead in application&quot;, &quot;Optional[Create Lead functionality of...)">runScenario("Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Login_TC_01" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if the user is able to login to the Application with valid username and password&quot;, &quot;Optional...)">runScenario("Verify if the user is able to login to the Application with valid username and password", "Optional...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.Create_Lead_01" class="method navigator-link" hash-for-method="runScenario(&quot;Verify if the user is able to login to the Application with valid username and invalid password&quot;, &quot;...)">runScenario("Verify if the user is able to login to the Application with valid username and invalid password", "...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -154,9 +193,93 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">testcases.Login_TC_01</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify if the user is able to login to the Application with valid username and invalid password&quot;, &quot;...)">
+                  </a> <!-- runScenario("Verify if the user is able to login to the Application with valid username and invalid password", "...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify if the user is able to login to the Application with valid username and invalid password", "Optional[Login Functionality]")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[text()=&apos;Leaftaps Login&apos;]&quot;}
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;11.0.22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac805a3158277e41296c5a9b976dde2a, findElement {value=//h2[text()=&apos;Leaftaps Login&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:45453/devtoo..., se:cdpVersion: 124.0.6367.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ac805a3158277e41296c5a9b976dde2a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at pages.LoginPage.verifyLoginpage(LoginPage.java:59)
+	at ✽.User should not be logged in successfully(file:///home/oem/Pictures/Obsolete/Selenium-master/CucumberFramework/src/main/java/feature/Login.feature:29)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.Create_Lead_01</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify if the user is able to login to the Application with valid username and invalid password&quot;, &quot;...)">
+                  </a> <!-- runScenario("Verify if the user is able to login to the Application with valid username and invalid password", "...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify if the user is able to login to the Application with valid username and invalid password", "Optional[Login Functionality]")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[text()=&apos;Leaftaps Login&apos;]&quot;}
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;11.0.22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26c6a0b435d058bc1eb0fe1ee0bb24dd, findElement {value=//h2[text()=&apos;Leaftaps Login&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38651/devtoo..., se:cdpVersion: 124.0.6367.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 26c6a0b435d058bc1eb0fe1ee0bb24dd
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at pages.LoginPage.verifyLoginpage(LoginPage.java:59)
+	at ✽.User should not be logged in successfully(file:///home/oem/Pictures/Obsolete/Selenium-master/CucumberFramework/src/main/java/feature/Login.feature:29)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">testcases.Login_TC_01</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -166,34 +289,6 @@
                   </a> <!-- runLogin({password=crmsfa, username=DemoCSR}) -->
                   <span class="method-name">runLogin</span>
                   <span class="parameters">({password=crmsfa, username=DemoCSR})</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
-  (session not created: DevToolsActivePort file doesn&apos;t exist)
-  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
-Host info: host: &apos;21c6a1162c99&apos;, ip: &apos;172.17.0.2&apos;
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;11.0.22&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:143)
-	at base.BaseClass.preCondition(BaseClass.java:100)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -202,113 +297,53 @@ Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-or
                   </a> <!-- runLogin({password=crmsfa, username=DemoCSR2}) -->
                   <span class="method-name">runLogin</span>
                   <span class="parameters">({password=crmsfa, username=DemoCSR2})</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
-  (session not created: DevToolsActivePort file doesn&apos;t exist)
-  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
-Host info: host: &apos;21c6a1162c99&apos;, ip: &apos;172.17.0.2&apos;
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;11.0.22&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:143)
-	at base.BaseClass.preCondition(BaseClass.java:100)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runLogin({password=crmsfa, username=DemoCSR})">
-                  </a> <!-- runLogin({password=crmsfa, username=DemoCSR}) -->
-                  <span class="method-name">runLogin</span>
-                  <span class="parameters">({password=crmsfa, username=DemoCSR})</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
-  (session not created: DevToolsActivePort file doesn&apos;t exist)
-  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
-Host info: host: &apos;21c6a1162c99&apos;, ip: &apos;172.17.0.2&apos;
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;11.0.22&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:143)
-	at base.BaseClass.preCondition(BaseClass.java:100)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
+                  <a name="runScenario(&quot;Verify if the user is able to login to the Application with valid username and invalid password&quot;, &quot;...)">
+                  </a> <!-- runScenario("Verify if the user is able to login to the Application with valid username and invalid password", "...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify if the user is able to login to the Application with valid username and invalid password", "Optional[Login Functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runLogin({password=crmsfa, username=DemoCSR2})">
-                  </a> <!-- runLogin({password=crmsfa, username=DemoCSR2}) -->
-                  <span class="method-name">runLogin</span>
-                  <span class="parameters">({password=crmsfa, username=DemoCSR2})</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
-  (session not created: DevToolsActivePort file doesn&apos;t exist)
-  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
-Host info: host: &apos;21c6a1162c99&apos;, ip: &apos;172.17.0.2&apos;
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;11.0.22&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:143)
-	at base.BaseClass.preCondition(BaseClass.java:100)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
+                  <a name="runScenario(&quot;Verify if the user is able to create a lead in application&quot;, &quot;Optional[Create Lead functionality of...)">
+                  </a> <!-- runScenario("Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of the application]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify if the user is able to create a lead in application&quot;, &quot;Optional[Create Lead functionality of...)">
+                  </a> <!-- runScenario("Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of the application]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify if the user is able to login to the Application with valid username and password&quot;, &quot;Optional...)">
+                  </a> <!-- runScenario("Verify if the user is able to login to the Application with valid username and password", "Optional...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify if the user is able to login to the Application with valid username and password", "Optional[Login Functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">testcases.Create_Lead_01</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -318,34 +353,6 @@ Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-or
                   </a> <!-- runCreateLead({password=crmsfa, last name=Radhakrishnan, first name=Hari, company name=Testleaf, username=DemoCSR}) -->
                   <span class="method-name">runCreateLead</span>
                   <span class="parameters">({password=crmsfa, last name=Radhakrishnan, first name=Hari, company name=Testleaf, username=DemoCSR})</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
-  (session not created: DevToolsActivePort file doesn&apos;t exist)
-  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
-Host info: host: &apos;21c6a1162c99&apos;, ip: &apos;172.17.0.2&apos;
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;11.0.22&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:143)
-	at base.BaseClass.preCondition(BaseClass.java:100)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -354,134 +361,67 @@ Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-or
                   </a> <!-- runCreateLead({password=crmsfa, last name=R, first name=Aravind, company name=Queagle, username=DemoCSR}) -->
                   <span class="method-name">runCreateLead</span>
                   <span class="parameters">({password=crmsfa, last name=R, first name=Aravind, company name=Queagle, username=DemoCSR})</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
-  (session not created: DevToolsActivePort file doesn&apos;t exist)
-  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
-Host info: host: &apos;21c6a1162c99&apos;, ip: &apos;172.17.0.2&apos;
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;11.0.22&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:143)
-	at base.BaseClass.preCondition(BaseClass.java:100)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runCreateLead({password=crmsfa, last name=R, first name=Aravind, company name=Queagle, username=DemoCSR})">
-                  </a> <!-- runCreateLead({password=crmsfa, last name=R, first name=Aravind, company name=Queagle, username=DemoCSR}) -->
-                  <span class="method-name">runCreateLead</span>
-                  <span class="parameters">({password=crmsfa, last name=R, first name=Aravind, company name=Queagle, username=DemoCSR})</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
-  (session not created: DevToolsActivePort file doesn&apos;t exist)
-  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
-Host info: host: &apos;21c6a1162c99&apos;, ip: &apos;172.17.0.2&apos;
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;11.0.22&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:143)
-	at base.BaseClass.preCondition(BaseClass.java:100)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
+                  <a name="runScenario(&quot;Verify if the user is able to login to the Application with valid username and password&quot;, &quot;Optional...)">
+                  </a> <!-- runScenario("Verify if the user is able to login to the Application with valid username and password", "Optional...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify if the user is able to login to the Application with valid username and password", "Optional[Login Functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runCreateLead({password=crmsfa, last name=Radhakrishnan, first name=Hari, company name=Testleaf, username=DemoCSR})">
-                  </a> <!-- runCreateLead({password=crmsfa, last name=Radhakrishnan, first name=Hari, company name=Testleaf, username=DemoCSR}) -->
-                  <span class="method-name">runCreateLead</span>
-                  <span class="parameters">({password=crmsfa, last name=Radhakrishnan, first name=Hari, company name=Testleaf, username=DemoCSR})</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
-  (session not created: DevToolsActivePort file doesn&apos;t exist)
-  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
-Host info: host: &apos;21c6a1162c99&apos;, ip: &apos;172.17.0.2&apos;
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;11.0.22&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:143)
-	at base.BaseClass.preCondition(BaseClass.java:100)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
+                  <a name="runScenario(&quot;Verify if the user is able to create a lead in application&quot;, &quot;Optional[Create Lead functionality of...)">
+                  </a> <!-- runScenario("Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of the application]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify if the user is able to create a lead in application&quot;, &quot;Optional[Create Lead functionality of...)">
+                  </a> <!-- runScenario("Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of the application]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify if the user is able to login to the Application with valid username and invalid password&quot;, &quot;...)">
+                  </a> <!-- runScenario("Verify if the user is able to login to the Application with valid username and invalid password", "...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify if the user is able to login to the Application with valid username and invalid password", "Optional[Login Functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/oem/Pictures/Obsolete/Selenium-master/CucumberFramework/testng_leaf.xml</span>
+            <span class="header-content">/home/oem/Pictures/Obsolete/Selenium-master/CucumberFramework/testng-actual.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Properties_File_English&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;language&quot; value=&quot;english&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.Create_Lead_01&quot;/&gt;
       &lt;class name=&quot;testcases.Login_TC_01&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Properties_File_English --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Properties_File_French&quot;&gt;
-    &lt;parameter name=&quot;language&quot; value=&quot;french&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;testcases.Create_Lead_01&quot;/&gt;
-      &lt;class name=&quot;testcases.Login_TC_01&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Properties_File_French --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -493,10 +433,7 @@ Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-or
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Properties_File_English (2 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">Properties_File_French (2 classes)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -506,6 +443,14 @@ Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-or
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -522,44 +467,68 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'runCreateLead')
-data.setCell(0, 2, 'testcases.Create_Lead_01')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'testcases.Login_TC_01')
+data.setCell(0, 3, 31710);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'runLogin')
-data.setCell(1, 2, 'testcases.Login_TC_01')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'testcases.Create_Lead_01')
+data.setCell(1, 3, 31407);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'runCreateLead')
+data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'testcases.Create_Lead_01')
-data.setCell(2, 3, 0);
+data.setCell(2, 3, 15701);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'runLogin')
-data.setCell(3, 2, 'testcases.Login_TC_01')
-data.setCell(3, 3, 0);
+data.setCell(3, 1, 'runCreateLead')
+data.setCell(3, 2, 'testcases.Create_Lead_01')
+data.setCell(3, 3, 15302);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'runCreateLead')
-data.setCell(4, 2, 'testcases.Create_Lead_01')
-data.setCell(4, 3, 0);
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'testcases.Login_TC_01')
+data.setCell(4, 3, 14820);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'runLogin')
-data.setCell(5, 2, 'testcases.Login_TC_01')
-data.setCell(5, 3, 0);
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'testcases.Create_Lead_01')
+data.setCell(5, 3, 13542);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'runCreateLead')
-data.setCell(6, 2, 'testcases.Create_Lead_01')
-data.setCell(6, 3, 0);
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'testcases.Login_TC_01')
+data.setCell(6, 3, 12452);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'runLogin')
-data.setCell(7, 2, 'testcases.Login_TC_01')
-data.setCell(7, 3, 0);
+data.setCell(7, 1, 'runCreateLead')
+data.setCell(7, 2, 'testcases.Create_Lead_01')
+data.setCell(7, 3, 10705);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'testcases.Create_Lead_01')
+data.setCell(8, 3, 5136);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'testcases.Login_TC_01')
+data.setCell(9, 3, 4157);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runLogin')
+data.setCell(10, 2, 'testcases.Login_TC_01')
+data.setCell(10, 3, 3089);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'testcases.Create_Lead_01')
+data.setCell(11, 3, 2237);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'testcases.Login_TC_01')
+data.setCell(12, 3, 1318);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runLogin')
+data.setCell(13, 2, 'testcases.Login_TC_01')
+data.setCell(13, 3, 1223);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -574,17 +543,13 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">testcases.Login_TC_01</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">stopReport</span>
-                <br/>
-                <span class="ignored-method-name">stopReport</span>
-                <br/>
-                <span class="ignored-method-name">startReport</span>
+                <span class="ignored-method-name">endResult</span>
                 <br/>
                 <span class="ignored-method-name">startReport</span>
                 <br/>
@@ -605,199 +570,289 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">setValue</span>
-                <span class="method-start">1023 ms</span>
+                <span class="method-start">380 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.Login_TC_01</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setValue</span>
-                <span class="method-start">1023 ms</span>
+                <span class="method-start">380 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.Create_Lead_01</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@7d44a19)</span>
-                <span class="method-start">1109 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@31bcf236)</span>
+                <span class="method-start">414 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Login_TC_01</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@31bcf236)</span>
+                <span class="method-start">423 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">testDetails</span>
-                <span class="method-start">2006 ms</span>
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">1004 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Create_Lead_01</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">1006 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">preCondition(english)</span>
-                <span class="method-start">2598 ms</span>
+                <span class="method-start">1030 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Login_TC_01</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(english)</span>
+                <span class="method-start">1032 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">runCreateLead({password=crmsfa, last name=Radhakrishnan, first name=Hari, company name=Testleaf, username=DemoCSR})</span>
-                <span class="method-start">19620 ms</span>
+                <span class="method-name">runScenario("Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of...)</span>
+                <span class="method-start">9580 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Create_Lead_01</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of...)</span>
+                <span class="method-start">9817 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Login_TC_01</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">24438 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(english)</span>
+                <span class="method-start">24649 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Create_Lead_01</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">25523 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(english)</span>
+                <span class="method-start">25705 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Login_TC_01</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of...)</span>
+                <span class="method-start">31618 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Create_Lead_01</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of...)</span>
+                <span class="method-start">33047 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Login_TC_01</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">44077 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(english)</span>
+                <span class="method-start">44271 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Create_Lead_01</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">46592 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(english)</span>
+                <span class="method-start">46871 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Login_TC_01</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify if the user is able to login to the Application with valid username and password", "Optional...)</span>
+                <span class="method-start">51153 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">19647 ms</span>
+                <span class="method-start">52497 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">preCondition</span>
-                <span class="method-start">19656 ms</span>
+                <span class="method-name">preCondition(english)</span>
+                <span class="method-start">52787 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Create_Lead_01</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify if the user is able to login to the Application with valid username and password", "Optional...)</span>
+                <span class="method-start">53907 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">56168 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(english)</span>
+                <span class="method-start">56509 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Login_TC_01</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify if the user is able to login to the Application with valid username and invalid password", "...)</span>
+                <span class="method-start">61708 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Create_Lead_01</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify if the user is able to login to the Application with valid username and invalid password", "...)</span>
+                <span class="method-start">64704 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Login_TC_01</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">93429 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(english)</span>
+                <span class="method-start">93576 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Create_Lead_01</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">96132 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(english)</span>
+                <span class="method-start">96280 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Login_TC_01</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify if the user is able to login to the Application with valid username and invalid password", "...)</span>
+                <span class="method-start">99345 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Create_Lead_01</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify if the user is able to login to the Application with valid username and invalid password", "...)</span>
+                <span class="method-start">102631 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Login_TC_01</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">103503 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(english)</span>
+                <span class="method-start">103923 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Create_Lead_01</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">107771 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(english)</span>
+                <span class="method-start">108103 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Login_TC_01</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runLogin({password=crmsfa, username=DemoCSR})</span>
+                <span class="method-start">111623 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">112848 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(english)</span>
+                <span class="method-start">113054 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Create_Lead_01</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runCreateLead({password=crmsfa, last name=Radhakrishnan, first name=Hari, company name=Testleaf, username=DemoCSR})</span>
+                <span class="method-start">115020 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Login_TC_01</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runLogin({password=crmsfa, username=DemoCSR2})</span>
+                <span class="method-start">122369 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">125459 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">125824 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Create_Lead_01</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">130330 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(english)</span>
+                <span class="method-start">130609 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">runCreateLead({password=crmsfa, last name=R, first name=Aravind, company name=Queagle, username=DemoCSR})</span>
-                <span class="method-start">19662 ms</span>
+                <span class="method-start">137244 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">19686 ms</span>
+                <span class="method-start">147958 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">19695 ms</span>
+                <span class="method-start">148170 ms</span>
               </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.Login_TC_01</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@7d44a19)</span>
-                <span class="method-start">19704 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">testDetails</span>
-                <span class="method-start">19722 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">preCondition(english)</span>
-                <span class="method-start">19774 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">runLogin({password=crmsfa, username=DemoCSR})</span>
-                <span class="method-start">32155 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition</span>
-                <span class="method-start">32161 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">preCondition</span>
-                <span class="method-start">32163 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">runLogin({password=crmsfa, username=DemoCSR2})</span>
-                <span class="method-start">32164 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition</span>
-                <span class="method-start">32170 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDownClass</span>
-                <span class="method-start">32171 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.Create_Lead_01</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setValue</span>
-                <span class="method-start">32365 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.Login_TC_01</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setValue</span>
-                <span class="method-start">32365 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.Create_Lead_01</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@1fb2d5e)</span>
-                <span class="method-start">32373 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">testDetails</span>
-                <span class="method-start">32399 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">preCondition(french)</span>
-                <span class="method-start">32443 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">runCreateLead({password=crmsfa, last name=Radhakrishnan, first name=Hari, company name=Testleaf, username=DemoCSR})</span>
-                <span class="method-start">43698 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition</span>
-                <span class="method-start">43713 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">preCondition</span>
-                <span class="method-start">43716 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">runCreateLead({password=crmsfa, last name=R, first name=Aravind, company name=Queagle, username=DemoCSR})</span>
-                <span class="method-start">43719 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition</span>
-                <span class="method-start">43725 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDownClass</span>
-                <span class="method-start">43728 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.Login_TC_01</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@1fb2d5e)</span>
-                <span class="method-start">43733 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">testDetails</span>
-                <span class="method-start">43757 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">preCondition(french)</span>
-                <span class="method-start">43800 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">runLogin({password=crmsfa, username=DemoCSR})</span>
-                <span class="method-start">54267 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition</span>
-                <span class="method-start">54288 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">preCondition</span>
-                <span class="method-start">54305 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">runLogin({password=crmsfa, username=DemoCSR2})</span>
-                <span class="method-start">54309 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition</span>
-                <span class="method-start">54315 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDownClass</span>
-                <span class="method-start">54355 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.Create_Lead_01</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
-                <span class="method-name">stopReport</span>
-                <span class="method-start">54471 ms</span>
+                <span class="method-name">endResult</span>
+                <span class="method-start">148353 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

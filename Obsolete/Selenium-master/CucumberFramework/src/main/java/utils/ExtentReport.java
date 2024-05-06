@@ -1,6 +1,7 @@
 package utils;
 
 import org.testng.annotations.BeforeClass;
+import org.openqa.selenium.remote.UnreachableBrowserException;
 import org.testng.Assert;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -11,6 +12,7 @@ import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import base.BaseClass;
+import base.DriverInstance;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import runner.RunnerClass;
 
@@ -25,34 +27,30 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class ExtentReport{
+public class ExtentReport extends DriverInstance {
 
 	private static ExtentReports extent;
 	private static final ThreadLocal<ExtentTest> parentTest = new ThreadLocal<ExtentTest>();
 	private static final ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
 	private static final ThreadLocal<String> testName = new ThreadLocal<String>();
-
 	private String fileName = "result.html";
-	private String pattern = "DD-MM-YY HH-MM-SS";
-
+	private String pattern = "dd-MMM-yyyy HH-mm-ss";
 	public String testcaseName, testDescription, testAuthor, testCategory;
-
-	public String folderName;
+	public String folderName = "";
 
 	@BeforeSuite(alwaysRun = true)
 	public synchronized void startReport() {
 
 		String date = new SimpleDateFormat(pattern).format(new Date());
-		String replace = date.replace(" ", "_");
 
-		folderName = "reports/" + replace;
-		File folder = new File("./"+folderName);
+		folderName = "reports/" + date;
+		File folder = new File("./" +folderName);
 
 		if (!folder.exists()) {
 			folder.mkdir();
 		}
 
-		ExtentHtmlReporter reporter = new ExtentHtmlReporter("./" + folderName + "/" + fileName);
+		ExtentHtmlReporter reporter = new ExtentHtmlReporter("./"+folderName + "/" + fileName);
 		reporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
 		reporter.config().setChartVisibilityOnOpen(true);
 		reporter.config().setTheme(Theme.DARK);
@@ -77,7 +75,7 @@ public class ExtentReport{
 
 	public synchronized void setNode() {
 
-		ExtentTest child = parentTest.get().createNode(testName.get());
+		ExtentTest child = parentTest.get().createNode(getTestcaseName());
 		test.set(child);
 	}
 
@@ -87,33 +85,31 @@ public class ExtentReport{
 	}
 
 	public void reportStep(String stepInfo, String status, boolean bSnap) throws IOException {
-		synchronized (test) {
+				synchronized (test) {
+		
 			MediaEntityModelProvider img = null;
 			// long snapNum = takesnap();
 			if (bSnap && !(status.equalsIgnoreCase("INFO") || status.equalsIgnoreCase("SKIPPED"))) {
 				try {
-					img = MediaEntityBuilder
-							.createScreenCaptureFromBase64String("../" + folderName + "/images/" + takesnap() + ".jpeg")
-							.build();
+					
+					
+					img = MediaEntityBuilder.createScreenCaptureFromPath("./../../" + folderName + "/images/" + takesnap() + ".jpg").build();
 
 				} catch (IOException e) {
 
 				}
 			}
+			
 			if (status.equalsIgnoreCase("pass")) {
 				test.get().pass(stepInfo, img);
-			}
-			else if(status.equalsIgnoreCase("fail")) {
+			} else if (status.equalsIgnoreCase("fail")) {
 				test.get().fail(stepInfo, img);
 				throw new RuntimeException("See the Report for More Details");
-			}
-			else if(status.equalsIgnoreCase("info")) {
+			} else if (status.equalsIgnoreCase("info")) {
 				test.get().info(stepInfo);
-			}
-			else if(status.equalsIgnoreCase("skipped")) {
+			} else if (status.equalsIgnoreCase("skipped")) {
 				test.get().skip("Test is skipped due to Dependeny");
-			}
-			else if(status.equalsIgnoreCase("warning")) {
+			} else if (status.equalsIgnoreCase("warning")) {
 				test.get().warning(stepInfo, img);
 			}
 		}
@@ -123,15 +119,22 @@ public class ExtentReport{
 		reportStep(stepInfo, status, true);
 	}
 
-	/*
-	 * public String getTestcaseName() { return testName.get(); }
-	 */
+	public String getTestcaseName() {
+		return testName.get();
+	}
 
 	public Status getStatus() {
 		return parentTest.get().getModel().getStatus();
 	}
-	@AfterSuite(alwaysRun =true)
-	public void endReport() {
+
+	@AfterSuite(alwaysRun = true)
+	public synchronized void endResult() {
+		try {
+			if (getDriver() != null) {
+				getDriver().quit();
+			}
+		} catch (UnreachableBrowserException e) {
+		}
 		extent.flush();
 	}
 }

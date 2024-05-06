@@ -36,7 +36,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/oem/Downloads/Obsolete/chromedriver-linux64 (copy).zip"/>
-	<classpathentry kind="lib" path="/home/oem/Downloads/Obsolete/chrome-linux64 (copy).zip"/>
+	<classpathentry kind="lib" path="/home/oem/Downloads/chromedriver-linux64.zip"/>
+	<classpathentry kind="lib" path="/home/oem/Downloads/chrome-linux64.zip"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -7,8 +7,14 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 import base.BaseClass;
+import base.ProjectSpecificMethods;
+import io.cucumber.testng.CucumberOptions;
 
-public class Login_TC_01 extends BaseClass {
+@CucumberOptions(features = "src/main/java/feature", glue = {"pages"}, 
+monochrome = true,
+tags="@Login"
+)
+public class Login_TC_01 extends ProjectSpecificMethods {
 	
 	@BeforeTest
 	public void setValue() {

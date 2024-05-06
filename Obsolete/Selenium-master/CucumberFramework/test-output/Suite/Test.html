@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>12/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 12 16:13:10 IST 2024</td>
+<td>Started on:</td><td>Tue Apr 30 22:25:58 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>74 seconds (74593 ms)</td>
+<tr><td>Total time:</td><td>147 seconds (147802 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,122 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.Login_TC_01.runScenario()'><b>runScenario</b><br>Test class: testcases.Login_TC_01<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify if the user is able to login to the Application with valid username and invalid password", "Optional[Login Functionality]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[text()=&apos;Leaftaps Login&apos;]&quot;}
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;11.0.22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac805a3158277e41296c5a9b976dde2a, findElement {value=//h2[text()=&apos;Leaftaps Login&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:45453/devtoo..., se:cdpVersion: 124.0.6367.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ac805a3158277e41296c5a9b976dde2a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at pages.LoginPage.verifyLoginpage(LoginPage.java:59)
+	at ✽.User should not be logged in successfully(file:///home/oem/Pictures/Obsolete/Selenium-master/CucumberFramework/src/main/java/feature/Login.feature:29)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1602483368", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1602483368'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[text()=&apos;Leaftaps Login&apos;]&quot;}
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;11.0.22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac805a3158277e41296c5a9b976dde2a, findElement {value=//h2[text()=&apos;Leaftaps Login&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:45453/devtoo..., se:cdpVersion: 124.0.6367.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ac805a3158277e41296c5a9b976dde2a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at pages.LoginPage.verifyLoginpage(LoginPage.java:59)
+	at ✽.User should not be logged in successfully(file:///home/oem/Pictures/Obsolete/Selenium-master/CucumberFramework/src/main/java/feature/Login.feature:29)
+</pre></div></td>
+<td>31</td>
+<td>testcases.Login_TC_01@22ff4249</td></tr>
+<tr>
+<td title='testcases.Create_Lead_01.runScenario()'><b>runScenario</b><br>Test class: testcases.Create_Lead_01<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify if the user is able to login to the Application with valid username and invalid password", "Optional[Login Functionality]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[text()=&apos;Leaftaps Login&apos;]&quot;}
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;11.0.22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26c6a0b435d058bc1eb0fe1ee0bb24dd, findElement {value=//h2[text()=&apos;Leaftaps Login&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38651/devtoo..., se:cdpVersion: 124.0.6367.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 26c6a0b435d058bc1eb0fe1ee0bb24dd
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at pages.LoginPage.verifyLoginpage(LoginPage.java:59)
+	at ✽.User should not be logged in successfully(file:///home/oem/Pictures/Obsolete/Selenium-master/CucumberFramework/src/main/java/feature/Login.feature:29)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace734570823", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace734570823'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[text()=&apos;Leaftaps Login&apos;]&quot;}
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-91-generic&apos;, java.version: &apos;11.0.22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26c6a0b435d058bc1eb0fe1ee0bb24dd, findElement {value=//h2[text()=&apos;Leaftaps Login&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38651/devtoo..., se:cdpVersion: 124.0.6367.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 26c6a0b435d058bc1eb0fe1ee0bb24dd
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at pages.LoginPage.verifyLoginpage(LoginPage.java:59)
+	at ✽.User should not be logged in successfully(file:///home/oem/Pictures/Obsolete/Selenium-master/CucumberFramework/src/main/java/feature/Login.feature:29)
+</pre></div></td>
+<td>31</td>
+<td>testcases.Create_Lead_01@34e9fd99</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,30 +191,65 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of the application]"</td>
-<td></td>
-<td>11</td>
-<td>runner.RunnerClass@6a6cb05c</td></tr>
-<tr>
-<td title='runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of the application]"</td>
-<td></td>
-<td>11</td>
-<td>runner.RunnerClass@6a6cb05c</td></tr>
-<tr>
-<td title='runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify if the user is able to login to the Application with valid username and password", "Optional[Login Functionality]"</td>
+<td title='testcases.Create_Lead_01.runScenario()'><b>runScenario</b><br>Test class: testcases.Create_Lead_01<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify if the user is able to login to the Application with valid username and password", "Optional[Login Functionality]"</td>
 <td></td>
 <td>2</td>
-<td>runner.RunnerClass@6a6cb05c</td></tr>
+<td>testcases.Create_Lead_01@34e9fd99</td></tr>
 <tr>
-<td title='runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify if the user is able to login to the Application with valid username and invalid password", "Optional[Login Functionality]"</td>
+<td title='testcases.Create_Lead_01.runScenario()'><b>runScenario</b><br>Test class: testcases.Create_Lead_01<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of the application]"</td>
+<td></td>
+<td>15</td>
+<td>testcases.Create_Lead_01@34e9fd99</td></tr>
+<tr>
+<td title='testcases.Login_TC_01.runScenario()'><b>runScenario</b><br>Test class: testcases.Login_TC_01<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify if the user is able to login to the Application with valid username and invalid password", "Optional[Login Functionality]"</td>
+<td></td>
+<td>4</td>
+<td>testcases.Login_TC_01@22ff4249</td></tr>
+<tr>
+<td title='testcases.Login_TC_01.runScenario()'><b>runScenario</b><br>Test class: testcases.Login_TC_01<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of the application]"</td>
+<td></td>
+<td>12</td>
+<td>testcases.Login_TC_01@22ff4249</td></tr>
+<tr>
+<td title='testcases.Login_TC_01.runLogin()'><b>runLogin</b><br>Test class: testcases.Login_TC_01<br>Parameters: {password=crmsfa, username=DemoCSR}</td>
+<td></td>
+<td>1</td>
+<td>testcases.Login_TC_01@22ff4249</td></tr>
+<tr>
+<td title='testcases.Create_Lead_01.runScenario()'><b>runScenario</b><br>Test class: testcases.Create_Lead_01<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of the application]"</td>
+<td></td>
+<td>13</td>
+<td>testcases.Create_Lead_01@34e9fd99</td></tr>
+<tr>
+<td title='testcases.Create_Lead_01.runCreateLead()'><b>runCreateLead</b><br>Test class: testcases.Create_Lead_01<br>Parameters: {password=crmsfa, last name=Radhakrishnan, first name=Hari, company name=Testleaf, username=DemoCSR}</td>
+<td></td>
+<td>15</td>
+<td>testcases.Create_Lead_01@34e9fd99</td></tr>
+<tr>
+<td title='testcases.Login_TC_01.runScenario()'><b>runScenario</b><br>Test class: testcases.Login_TC_01<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify if the user is able to create a lead in application", "Optional[Create Lead functionality of the application]"</td>
+<td></td>
+<td>14</td>
+<td>testcases.Login_TC_01@22ff4249</td></tr>
+<tr>
+<td title='testcases.Create_Lead_01.runCreateLead()'><b>runCreateLead</b><br>Test class: testcases.Create_Lead_01<br>Parameters: {password=crmsfa, last name=R, first name=Aravind, company name=Queagle, username=DemoCSR}</td>
+<td></td>
+<td>10</td>
+<td>testcases.Create_Lead_01@34e9fd99</td></tr>
+<tr>
+<td title='testcases.Login_TC_01.runScenario()'><b>runScenario</b><br>Test class: testcases.Login_TC_01<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify if the user is able to login to the Application with valid username and password", "Optional[Login Functionality]"</td>
+<td></td>
+<td>1</td>
+<td>testcases.Login_TC_01@22ff4249</td></tr>
+<tr>
+<td title='testcases.Create_Lead_01.runScenario()'><b>runScenario</b><br>Test class: testcases.Create_Lead_01<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify if the user is able to login to the Application with valid username and invalid password", "Optional[Login Functionality]"</td>
+<td></td>
+<td>5</td>
+<td>testcases.Create_Lead_01@34e9fd99</td></tr>
+<tr>
+<td title='testcases.Login_TC_01.runLogin()'><b>runLogin</b><br>Test class: testcases.Login_TC_01<br>Parameters: {password=crmsfa, username=DemoCSR2}</td>
 <td></td>
 <td>3</td>
-<td>runner.RunnerClass@6a6cb05c</td></tr>
-<tr>
-<td title='runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify if the user is able to login to the Application with valid username and invalid password", "Optional[Login Functionality]"</td>
-<td></td>
-<td>3</td>
-<td>runner.RunnerClass@6a6cb05c</td></tr>
+<td>testcases.Login_TC_01@22ff4249</td></tr>
 </table><p>
 </body>
 </html>

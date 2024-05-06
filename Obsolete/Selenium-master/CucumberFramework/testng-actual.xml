@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="Test">
+  <test name="Test" parallel="classes">
     <classes>
       <class name="testcases.Create_Lead_01"/>
       <class name="testcases.Login_TC_01"/>

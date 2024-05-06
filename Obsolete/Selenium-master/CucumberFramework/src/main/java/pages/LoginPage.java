@@ -16,79 +16,58 @@ import java.util.ListIterator;
 import java.util.Map;
 
 import base.BaseClass;
+import base.ProjectSpecificMethods;
 import utils.ExtentReport;
 
-public class LoginPage extends BaseClass {
+public class LoginPage extends ProjectSpecificMethods {
 
 	@Given("Enter the username as {string}")
 	public LoginPage enterUsername(String uName) throws IOException {
-		try {
-		if (prop == null) {
-
-			driver.findElement(By.id("username")).sendKeys(uName);
-			reportStep("Username is entered successfully", "pass");
-
+		if (getProperty() == null) {
+			getDriver().findElement(By.id("username")).sendKeys(uName);
+			
 		} else {
-
-			driver.findElement(By.id("username")).sendKeys(prop.getProperty("username"));
-			reportStep("Username is entered successfully", "pass");
+			getDriver().findElement(By.id("username")).sendKeys(getProperty().getProperty("username"));
+			
 		}
-		}
-		catch (Exception e) {
-			reportStep("Username is not entered successfully", "fail");
-		}
-			 
-
+		reportStep("Username is entered successfully", "pass");
 		return this;
 	}
 
 	@Given("Enter the password as {string}")
 	public LoginPage enterPassword(String pName) throws IOException {
-		try {
-			if (prop == null) {
-
-				driver.findElement(By.id("password")).sendKeys(pName);
-				reportStep("Password is entered successfully", "pass");
-			} else {
-
-				driver.findElement(By.id("password")).sendKeys(prop.getProperty("password"));
-				reportStep("Password is entered successfully", "pass");
-
-			}
-		} catch (Exception e) {
-			reportStep("Password is not entered successfully", "pass");
+		
+		if(getProperty() == null) {
+			getDriver().findElement(By.id("password")).sendKeys(pName);
+		} else {
+			getDriver().findElement(By.id("password")).sendKeys(getProperty().getProperty("password"));
 		}
-
-		return this;
+		reportStep("Password is entered successfully", "pass");
+		 return this;
 
 	}
 
 	@Given("Click on Login button")
 	public HomePage clickLogin() throws IOException {
-			try {
-			driver.findElement(By.className("decorativeSubmit")).click();
+			getDriver().findElement(By.className("decorativeSubmit")).click();
 			reportStep("Loggedin successfully", "pass");
-			}
-			catch (Exception e) {
-			reportStep("Loggedin not successfully", "fail");
-			}
-		
-		return new HomePage();
+			return new HomePage();
 	}
 
 	@But("User should not be logged in successfully")
-	public LoginPage verifyLoginpage() {
-		boolean loginLink = driver.findElement(By.xpath("//h2[text()='Leaftaps Login']")).isDisplayed();
+	public LoginPage verifyLoginpage() throws IOException {
+		boolean loginLink = getDriver().findElement(By.xpath("//h2[text()='Leaftaps Login']")).isDisplayed();
 		if (loginLink) {
 			System.out.println("Loginpage is verified");
 		} else {
 			System.out.println("Loginpage is not verified");
 		}
+		reportStep("Login Page Verified successfully", "pass");
 		return this;
 	}
 
 	@Given("^Enter the login details as below$")
-	public LoginPage loginUsingDatatable(DataTable datatable) {
+	public LoginPage loginUsingDatatable(DataTable datatable) throws IOException {
 		/*
 		 * List<Map<String, String>> map = datatable.entries();
 		 * 
@@ -106,9 +85,9 @@ public class LoginPage extends BaseClass {
 			List<String> listInner = list.get(i);
 			ListIterator iterate = listInner.listIterator();
 			while (iterate.hasNext()) {
-				driver.findElement(By.id("username")).sendKeys(iterate.next().toString());
-				driver.findElement(By.id("password")).sendKeys(iterate.next().toString());
-				driver.findElement(By.className("decorativeSubmit")).click();
+				getDriver().findElement(By.id("username")).sendKeys(iterate.next().toString());
+				getDriver().findElement(By.id("password")).sendKeys(iterate.next().toString());
+				getDriver().findElement(By.className("decorativeSubmit")).click();
 				new HomePage().clickLogOutButton();
 			}
 		}

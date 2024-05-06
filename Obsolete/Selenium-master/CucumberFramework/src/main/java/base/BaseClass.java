@@ -19,6 +19,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.poi.util.SystemOutLogger;
 import org.testng.annotations.BeforeClass;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriver.Options;
 import org.openqa.selenium.WebDriver.Window;
@@ -30,6 +31,7 @@ import utils.DataUsingCsv;
 import utils.DataUsingDB;
 import utils.ExtentReport;
 import utils.ReadExcelData;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -75,37 +77,16 @@ public class BaseClass extends AbstractTestNGCucumberTests {
 			fis.close();
 
 		}
-		/*
-		 * ChromeOptions options = new ChromeOptions();
-		 * options.setPlatformName("linux"); options.setBrowserVersion("latest");
-		 * 
-		 * 
-		 * Map<String, String> sauceOptions = new HashMap<>();
-		 * sauceOptions.put("username", "oauth-mohanapriyav1811-91531");
-		 * sauceOptions.put("accessKey", "9ed5ab1f-f3db-420b-b5fc-8ac170773df2"); //
-		 * sauceOptions.put("name", testInfo.getDisplayName());
-		 * 
-		 * options.setCapability("sauce:options", sauceOptions); URL url = new
-		 * URL("https://ondemand.eu-central-1.saucelabs.com:443/wd/hub");
-		 * 
-		 * driver = new RemoteWebDriver(url, options);
-		 */
 
-		ChromeOptions browserOptions = new ChromeOptions();
+		ChromeOptions options = new ChromeOptions();
 		DesiredCapabilities dc = new DesiredCapabilities();
-		dc.setBrowserName("chrome"); //
-		dc.setVersion("123.0.6312.86");
-		browserOptions.merge(dc);
+		options.setCapability("browserName", "chrome");
+		options.setCapability("platformName", Platform.LINUX);
 
-		driver = new RemoteWebDriver(new URL("http://172.17.0.2:4444/wd/hub"), browserOptions);
-
-		/*
-		 * driver = new ChromeDriver(browserOptions); Options opt = driver.manage();
-		 * Window win = opt.window(); win.maximize(); Timeouts timeouts =
-		 * opt.timeouts(); Timeouts tm =
-		 * timeouts.implicitlyWait(Duration.ofSeconds(30));
-		 */
-		// driver = new ChromeDriver();
+		//driver = new RemoteWebDriver(new URL("https://mohanapriya1811:f9bed5fc-1206-445b-8c62-234198b24678@ondemand.us-west-1.saucelabs.com:443/wd/hub"), options);
+		driver = new RemoteWebDriver(new URL("http://172.17.0.1:4444/wd/hub"), options);
+		
+		 driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.get("http://leaftaps.com/opentaps/control/main");

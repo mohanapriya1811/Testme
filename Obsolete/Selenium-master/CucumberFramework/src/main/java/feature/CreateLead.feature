@@ -1,5 +1,5 @@
 
-@CreateLead
+@Login
 Feature: Create Lead functionality of the application
 
 
